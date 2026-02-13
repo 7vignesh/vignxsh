@@ -90,6 +90,14 @@ const techIcons: Record<string, { icon: React.FC<{ size?: number; className?: st
     ),
     color: '#47A248',
   },
+  supabase: {
+    icon: ({ size = 24, className }) => (
+      <svg width={size} height={size} viewBox="0 0 24 24" className={className}>
+        <path fill="#3ECF8E" d="M2.636 14.646a.546.546 0 0 0 .482.854h8.382v8.708a.546.546 0 0 0 .964.32l9.378-14.32a.545.545 0 0 0-.482-.854h-8.382V.646a.546.546 0 0 0-.964-.32L2.636 14.646z"/>
+      </svg>
+    ),
+    color: '#3ECF8E',
+  },
   graphql: {
     icon: ({ size = 24, className }) => (
       <svg width={size} height={size} viewBox="0 0 24 24" className={className}>
