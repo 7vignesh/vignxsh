@@ -43,6 +43,14 @@ export const skills: Skill[] = [
 
 export const projects: Project[] = [
   {
+    id: '4',
+    title: 'TraceAI',
+    description: 'AI-powered code execution explainer that visualizes logic flow line-by-line. Features a modern monorepo architecture with Turborepo, high-performance Bun runtime, and Hono backend, integrating OpenAI/Groq compatible APIs for intelligent code analysis.',
+    techStack: ['React', 'Tailwind CSS', 'Bun', 'Hono', 'OpenAI', 'Turborepo'],
+    githubUrl: 'https://github.com/7vignesh/Trace_AI',
+    featured: true,
+  },
+  {
     id: '1',
     title: 'BlogPost',
     description: 'A full-stack blog platform with JWT authentication featuring access/refresh token rotation and role-based authorization. Includes RESTful APIs for CRUD operations with search, pagination, tag filtering, and user-specific content management with ownership-based access control.',
