@@ -22,12 +22,3 @@ const Hero: React.FC = () => {
 };
 
 export default Hero;
-
-      <div className="w-16 h-16 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center shrink-0 text-zinc-400 font-semibold text-xl select-none">
-        {personalInfo.name[0]}
-      </div>
-    </div>
-  );
-};
-
-export default Hero;
