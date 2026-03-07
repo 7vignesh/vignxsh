@@ -8,6 +8,7 @@ export const personalInfo: PersonalInfo = {
   email: 'vigneshgopikrishnan.7@gmail.com',
   location: 'Bangalore, India',
   resumeUrl: '/resume.pdf',
+  birthDate: '2003-01-01',
 };
 
 export const navItems: NavItem[] = [

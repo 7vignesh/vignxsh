@@ -21,6 +21,7 @@ export interface Skill {
 export interface Experience {
   id: string;
   company: string;
+  companyUrl?: string;
   role: string;
   duration: string;
   startDate: string;
@@ -56,4 +57,5 @@ export interface PersonalInfo {
   location?: string;
   avatar?: string;
   resumeUrl?: string;
+  birthDate?: string;
 }

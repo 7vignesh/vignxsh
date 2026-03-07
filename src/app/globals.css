@@ -1,23 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --background: #000000;
-  --foreground: #ffffff;
-  --muted: #a1a1aa;
-  --muted-foreground: #71717a;
+  --background: #0a0a0a;
+  --foreground: #d4d4d8;
+  --muted: #71717a;
   --accent: #3b82f6;
   --accent-hover: #60a5fa;
-  --card: #0a0a0a;
-  --card-hover: #141414;
+  --card: #111111;
+  --card-hover: #1a1a1a;
   --border: #27272a;
-  --glow: rgba(59, 130, 246, 0.5);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
   --color-accent-hover: var(--accent-hover);
   --color-card: var(--card);
@@ -33,37 +30,9 @@ body {
   font-family: var(--font-sans), system-ui, sans-serif;
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--background);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--border);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--muted-foreground);
-}
-
-/* Gradient text */
-.gradient-text {
-  background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.gradient-text-accent {
-  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+a {
+  text-decoration-color: var(--border);
+  text-underline-offset: 3px;
 }
 
 /* Glassmorphism card */

@@ -1,61 +1,40 @@
 'use client';
 
-import React from 'react';
-import { Button } from '@/components/ui';
-import Icon from '@/components/ui/Icon';
+import React, { useEffect, useState } from 'react';
 import { personalInfo } from '@/data/portfolio';
 
 const Hero: React.FC = () => {
+  const [age, setAge] = useState<string>('');
+
+  useEffect(() => {
+    const birth = new Date(personalInfo.birthDate ?? '2003-01-01');
+    const tick = () => {
+      const ms = Date.now() - birth.getTime();
+      const years = ms / (365.25 * 24 * 60 * 60 * 1000);
+      setAge(years.toFixed(9));
+    };
+    tick();
+    const id = setInterval(tick, 100);
+    return () => clearInterval(id);
+  }, []);
+
   return (
-    <section
-      id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
-    >
-      <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-8">
-          <span className="relative flex h-2 w-2">
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500" />
-          </span>
-          <span className="text-sm text-muted">Available for new opportunities</span>
-        </div>
-
-        {/* Main heading */}
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
-          <span className="gradient-text">Hi, I&apos;m </span>
-          <span className="gradient-text-accent">{personalInfo.name}</span>
+    <div className="flex items-start justify-between gap-8">
+      <div>
+        <h1 className="text-2xl font-semibold text-white">
+          hi, {personalInfo.name.toLowerCase()} here
         </h1>
-
-        {/* Role/Title */}
-        <h2 className="text-xl md:text-2xl lg:text-3xl text-muted font-medium mb-6">
-          {personalInfo.role}
-        </h2>
-
-        {/* Tagline */}
-        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12">
-          {personalInfo.tagline}
+        <p className="font-mono text-sm text-muted mt-1">
+          been here for {age} years
         </p>
-
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button
-            variant="primary"
-            size="lg"
-            onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-          >
-            View Projects
-            <Icon name="arrowRight" size={20} className="ml-2" />
-          </Button>
-          <Button
-            variant="outline"
-            size="lg"
-            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-          >
-            Contact Me
-          </Button>
-        </div>
+        <p className="text-sm text-muted mt-3">
+          {personalInfo.role.toLowerCase()} · {personalInfo.location?.toLowerCase()}
+        </p>
       </div>
-    </section>
+      <div className="w-16 h-16 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center shrink-0 text-zinc-400 font-semibold text-xl select-none">
+        {personalInfo.name[0]}
+      </div>
+    </div>
   );
 };
 
