@@ -11,7 +11,7 @@ interface CardProps extends HTMLAttributes<HTMLDivElement> {
 
 const Card = forwardRef<HTMLDivElement, CardProps>(
   ({ variant = 'default', hover = true, children, className = '', ...props }, ref) => {
-    const baseStyles = 'rounded-2xl overflow-hidden transition-all duration-300';
+    const baseStyles = 'rounded-2xl overflow-hidden';
 
     const variants = {
       default: 'bg-card border border-border',
@@ -20,7 +20,7 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
     };
 
     const hoverStyles = hover
-      ? 'hover:border-white/20 hover:bg-card-hover hover:-translate-y-1 hover:shadow-xl hover:shadow-black/20'
+      ? 'hover:border-white/20 hover:bg-card-hover'
       : '';
 
     return (

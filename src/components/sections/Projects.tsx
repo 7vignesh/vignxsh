@@ -14,8 +14,7 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
   return (
     <Card
-      className="group p-6 h-full flex flex-col"
-      style={{ animationDelay: `${index * 0.1}s` }}
+      className="p-6 h-full flex flex-col"
     >
       {/* Project Header */}
       <div className="flex items-start justify-between mb-4">
@@ -28,7 +27,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-lg text-muted hover:text-white hover:bg-white/10 transition-all duration-300"
+              className="p-2 rounded-lg text-muted hover:text-white hover:bg-white/10"
               aria-label="View on GitHub"
             >
               <Icon name="github" size={20} />
@@ -39,7 +38,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-lg text-muted hover:text-white hover:bg-white/10 transition-all duration-300"
+              className="p-2 rounded-lg text-muted hover:text-white hover:bg-white/10"
               aria-label="View live demo"
             >
               <Icon name="externalLink" size={20} />
@@ -50,7 +49,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
 
       {/* Project Content */}
       <div className="flex-1">
-        <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-accent transition-colors duration-300">
+        <h3 className="text-xl font-semibold text-white mb-3">
           {project.title}
         </h3>
         <p className="text-muted text-sm leading-relaxed mb-4">
@@ -82,7 +81,7 @@ const Projects: React.FC = () => {
       className="bg-gradient-to-b from-background via-card/30 to-background"
     >
       {/* Featured Projects */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16 stagger-children">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
         {featuredProjects.map((project, index) => (
           <ProjectCard key={project.id} project={project} index={index} />
         ))}
@@ -94,7 +93,7 @@ const Projects: React.FC = () => {
           <h3 className="text-2xl font-semibold text-white text-center mb-8">
             Other Noteworthy Projects
           </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 stagger-children">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {otherProjects.map((project, index) => (
               <ProjectCard key={project.id} project={project} index={index} />
             ))}

@@ -44,9 +44,9 @@ const Navigation: React.FC = () => {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-50 ${
           isScrolled
-            ? 'bg-background/80 backdrop-blur-lg border-b border-border'
+            ? 'bg-background border-b border-border'
             : 'bg-transparent'
         }`}
       >
@@ -75,7 +75,7 @@ const Navigation: React.FC = () => {
                     e.preventDefault();
                     handleNavClick(item.href);
                   }}
-                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
+                  className={`px-4 py-2 rounded-lg text-sm font-medium ${
                     activeSection === item.href.replace('#', '')
                       ? 'text-white bg-white/10'
                       : 'text-muted hover:text-white hover:bg-white/5'
@@ -111,13 +111,13 @@ const Navigation: React.FC = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed inset-0 z-40 md:hidden transition-all duration-300 ${
+        className={`fixed inset-0 z-40 md:hidden ${
           isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
         }`}
       >
         {/* Backdrop */}
         <div
-          className="absolute inset-0 bg-background/95 backdrop-blur-lg"
+          className="absolute inset-0 bg-background/95"
           onClick={() => setIsMobileMenuOpen(false)}
         />
 
@@ -131,12 +131,11 @@ const Navigation: React.FC = () => {
                 e.preventDefault();
                 handleNavClick(item.href);
               }}
-              className={`text-2xl font-medium transition-all duration-300 animate-fade-in ${
+              className={`text-2xl font-medium ${
                 activeSection === item.href.replace('#', '')
                   ? 'text-white'
                   : 'text-muted hover:text-white'
               }`}
-              style={{ animationDelay: `${index * 0.1}s` }}
             >
               {item.label}
             </a>
@@ -144,8 +143,7 @@ const Navigation: React.FC = () => {
           <Button
             variant="outline"
             size="lg"
-            className="mt-4 animate-fade-in"
-            style={{ animationDelay: '0.5s' }}
+            className="mt-4"
             onClick={() => window.open(personalInfo.resumeUrl, '_blank')}
           >
             Resume

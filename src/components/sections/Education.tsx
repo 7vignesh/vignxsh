@@ -55,7 +55,6 @@ const Education: React.FC = () => {
           <Card
             key={edu.id}
             className="p-6 h-full"
-            style={{ animationDelay: `${index * 0.1}s` }}
           >
             {/* Header */}
             <div className="flex items-start gap-4 mb-4">

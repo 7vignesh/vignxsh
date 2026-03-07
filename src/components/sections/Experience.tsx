@@ -21,14 +21,13 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience, index, isLa
       )}
 
       {/* Timeline dot */}
-      <div className="absolute left-0 top-1 w-6 h-6 rounded-full bg-card border-2 border-accent flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+      <div className="absolute left-0 top-1 w-6 h-6 rounded-full bg-card border-2 border-accent flex items-center justify-center">
         <div className="w-2 h-2 rounded-full bg-accent" />
       </div>
 
       {/* Content */}
       <div
-        className="glass-card rounded-2xl p-6 ml-4 hover:border-white/20 transition-all duration-300 animate-fade-in"
-        style={{ animationDelay: `${index * 0.15}s` }}
+        className="glass-card rounded-2xl p-6 ml-4"
       >
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">

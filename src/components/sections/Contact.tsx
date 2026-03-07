@@ -98,7 +98,7 @@ const Contact: React.FC = () => {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 rounded-xl bg-card border border-border text-muted hover:text-white hover:border-white/20 hover:bg-card-hover transition-all duration-300 hover:-translate-y-1"
+                  className="p-3 rounded-xl bg-card border border-border text-muted hover:text-white hover:border-white/20 hover:bg-card-hover"
                   aria-label={link.name}
                 >
                   <Icon name={link.icon} size={20} />
