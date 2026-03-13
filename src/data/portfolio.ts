@@ -23,12 +23,14 @@ export const navItems: NavItem[] = [
 export const skills: Skill[] = [
   // Frontend
   { name: 'React', icon: 'react', category: 'frontend', proficiency: 90 },
+  { name: 'TypeScript', icon: 'typescript', category: 'frontend', proficiency: 88 },
   { name: 'JavaScript', icon: 'javascript', category: 'frontend', proficiency: 90 },
   { name: 'HTML5', icon: 'html', category: 'frontend', proficiency: 95 },
   { name: 'Tailwind CSS', icon: 'tailwind', category: 'frontend', proficiency: 85 },
   
   // Backend
   { name: 'Node.js', icon: 'nodejs', category: 'backend', proficiency: 90 },
+  { name: 'Express.js', icon: 'express', category: 'backend', proficiency: 88 },
   { name: 'REST APIs', icon: 'api', category: 'backend', proficiency: 90 },
   { name: 'Python', icon: 'python', category: 'backend', proficiency: 80 },
   { name: 'MongoDB', icon: 'mongodb', category: 'backend', proficiency: 85 },
