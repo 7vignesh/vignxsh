@@ -77,6 +77,17 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/7vignesh/sorting-visualizer',
     featured: true,
   },
+  {
+    id: '5',
+    title: 'MedExplain',
+    description: 'A full-stack web application that allows users to upload medical reports (PDF or image), extract parameters using OCR, interpret them using AI/NLP, and visualize results in a clean dashboard. Features include user authentication, file upload with OCR, AI-powered explanations, interactive dashboard, report history, and strong security & privacy.',
+    techStack: [
+      'Next.js', 'TailwindCSS', 'TypeScript', 'Chart.js', 'Recharts', 'Tesseract.js', 'Firebase Auth',
+      'Node.js', 'Express', 'MongoDB Atlas', 'LangChain', 'OpenAI', 'Multer', 'PDF-parse'
+    ],
+    githubUrl: 'https://github.com/7vignesh/medxplain',
+    featured: true,
+  },
 ];
 
 export const experiences: Experience[] = [
