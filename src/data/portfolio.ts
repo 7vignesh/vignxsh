@@ -125,4 +125,9 @@ export const socialLinks: SocialLink[] = [
     url: 'mailto:vigneshgopikrishnan.7@gmail.com',
     icon: 'email',
   },
+    {
+      name: 'X',
+      url: 'https://x.com/Vignesh7123',
+      icon: 'x',
+    },
 ];
