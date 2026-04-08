@@ -46,6 +46,14 @@ export const skills: Skill[] = [
 
 export const projects: Project[] = [
   {
+    id: '6',
+    title: 'StackForge',
+    description: 'An AI agent orchestration system for full-stack scaffolding where users describe a product idea in plain English and specialized subagents generate a structured project blueprint. Built with a TypeScript monorepo architecture, real-time SSE progress streaming, strict Zod validation, and OpenRouter provider integration with token budget optimization.',
+    techStack: ['TypeScript', 'Bun', 'Turborepo', 'Express', 'Zod', 'SSE', 'OpenRouter'],
+    githubUrl: 'https://github.com/7vignesh/stackforge',
+    featured: true,
+  },
+  {
     id: '4',
     title: 'TraceAI',
     description: 'AI-powered code execution explainer that visualizes logic flow line-by-line. Features a modern monorepo architecture with Turborepo, high-performance Bun runtime, and Hono backend, integrating OpenAI/Groq compatible APIs for intelligent code analysis.',
