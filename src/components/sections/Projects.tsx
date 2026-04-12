@@ -7,7 +7,7 @@ const Projects: React.FC = () => {
       <h2 className="text-xs font-medium uppercase tracking-widest text-muted">projects</h2>
       <div className="space-y-6">
         {projects.map((project) => (
-          <div key={project.id} className="space-y-1">
+          <div key={project.id} className="space-y-2">
             <div className="flex items-center gap-3">
               {project.githubUrl ? (
                 <a
@@ -32,7 +32,11 @@ const Projects: React.FC = () => {
                 </a>
               )}
             </div>
-            <p className="text-sm text-zinc-400 leading-relaxed">{project.description}</p>
+            <ul className="list-disc space-y-1 pl-5 text-sm leading-relaxed text-zinc-400 marker:text-zinc-500">
+              {project.description.map((point, index) => (
+                <li key={`${project.id}-${index}`}>{point}</li>
+              ))}
+            </ul>
             <p className="text-xs text-zinc-600">{project.techStack.join(' · ')}</p>
           </div>
         ))}
