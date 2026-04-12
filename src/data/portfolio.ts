@@ -48,7 +48,11 @@ export const projects: Project[] = [
   {
     id: '6',
     title: 'StackForge',
-    description: 'An AI agent orchestration system for full-stack scaffolding where users describe a product idea in plain English and specialized subagents generate a structured project blueprint. Built with a TypeScript monorepo architecture, real-time SSE progress streaming, strict Zod validation, and OpenRouter provider integration with token budget optimization.',
+    description: [
+      'AI agent orchestration platform that turns plain-English product ideas into structured full-stack blueprints.',
+      'Built as a TypeScript monorepo with Bun + Turborepo, Express APIs, and strict schema validation using Zod.',
+      'Streams live generation progress via SSE and integrates OpenRouter with token budget optimization for efficient runs.',
+    ],
     techStack: ['TypeScript', 'Bun', 'Turborepo', 'Express', 'Zod', 'SSE', 'OpenRouter'],
     githubUrl: 'https://github.com/7vignesh/stackforge',
     featured: true,
@@ -56,7 +60,11 @@ export const projects: Project[] = [
   {
     id: '4',
     title: 'TraceAI',
-    description: 'AI-powered code execution explainer that visualizes logic flow line-by-line. Features a modern monorepo architecture with Turborepo, high-performance Bun runtime, and Hono backend, integrating OpenAI/Groq compatible APIs for intelligent code analysis.',
+    description: [
+      'AI-powered code execution explainer that visualizes program logic step-by-step.',
+      'Designed with a monorepo setup using Turborepo and a high-performance Bun runtime.',
+      'Uses a Hono backend with OpenAI and Groq-compatible APIs for intelligent code analysis.',
+    ],
     techStack: ['React', 'Tailwind CSS', 'Bun', 'Hono', 'OpenAI', 'Turborepo'],
     githubUrl: 'https://github.com/7vignesh/Trace_AI',
     featured: true,
@@ -64,7 +72,11 @@ export const projects: Project[] = [
   {
     id: '1',
     title: 'BlogPost',
-    description: 'A full-stack blog platform with JWT authentication featuring access/refresh token rotation and role-based authorization. Includes RESTful APIs for CRUD operations with search, pagination, tag filtering, and user-specific content management with ownership-based access control.',
+    description: [
+      'Full-stack blog platform with JWT authentication, refresh token rotation, and role-based authorization.',
+      'Provides REST APIs for CRUD operations with search, pagination, and tag-based filtering.',
+      'Implements ownership-based permissions for secure user-specific content management.',
+    ],
     techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'JWT', 'Markdown'],
     githubUrl: 'https://github.com/7vignesh/blogpost',
     featured: true,
@@ -72,7 +84,11 @@ export const projects: Project[] = [
   {
     id: '2',
     title: 'Real-time Chat Application',
-    description: 'A real-time full-stack chat application enabling seamless user communication with Socket.io. Features secure JWT authentication, Zustand for efficient global state management, optimized API performance, and production-grade deployment configurations.',
+    description: [
+      'Real-time full-stack chat platform built with Socket.io for low-latency messaging.',
+      'Secures user access with JWT-based authentication and authorization flows.',
+      'Uses Zustand for state management and includes production-ready deployment optimizations.',
+    ],
     techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'Socket.io', 'Zustand'],
     githubUrl: 'https://github.com/7vignesh/chat',
     featured: true,
@@ -80,7 +96,11 @@ export const projects: Project[] = [
   {
     id: '3',
     title: 'Sorting Visualizer',
-    description: 'A dynamic visualization tool for sorting algorithms including Bubble, Selection, Insertion, Merge, and Quick Sort. Features real-time visualization to effectively demonstrate and compare algorithm performance with a responsive design.',
+    description: [
+      'Interactive visualization tool for Bubble, Selection, Insertion, Merge, and Quick Sort algorithms.',
+      'Animates each sorting step in real time to help users understand algorithm behavior clearly.',
+      'Responsive UI that makes side-by-side comparison and learning accessible across devices.',
+    ],
     techStack: ['HTML', 'CSS', 'JavaScript', 'Algorithms'],
     githubUrl: 'https://github.com/7vignesh/sorting-visualizer',
     featured: true,
@@ -88,7 +108,11 @@ export const projects: Project[] = [
   {
     id: '5',
     title: 'MedExplain',
-    description: 'A full-stack web application that allows users to upload medical reports (PDF or image), extract parameters using OCR, interpret them using AI/NLP, and visualize results in a clean dashboard. Features include user authentication, file upload with OCR, AI-powered explanations, interactive dashboard, report history, and strong security & privacy.',
+    description: [
+      'Full-stack app where users upload medical reports (PDF/image) for automated analysis.',
+      'Extracts key health parameters using OCR and interprets them with AI/NLP pipelines.',
+      'Includes authentication, report history, and an interactive dashboard with privacy-focused handling.',
+    ],
     techStack: [
       'Next.js', 'TailwindCSS', 'TypeScript', 'Chart.js', 'Recharts', 'Tesseract.js', 'Firebase Auth',
       'Node.js', 'Express', 'MongoDB Atlas', 'LangChain', 'OpenAI', 'Multer', 'PDF-parse'
