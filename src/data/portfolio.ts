@@ -55,6 +55,7 @@ export const projects: Project[] = [
     ],
     techStack: ['TypeScript', 'Bun', 'Turborepo', 'Express', 'Zod', 'SSE', 'OpenRouter'],
     githubUrl: 'https://github.com/7vignesh/stackforge',
+    liveUrl: 'https://stackforge-web.vercel.app/',
     featured: true,
   },
   {
