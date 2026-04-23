@@ -46,6 +46,30 @@ export const skills: Skill[] = [
 
 export const projects: Project[] = [
   {
+    id: '7',
+    title: 'Folio',
+    description: [
+      'Browser-based PDF workspace for viewing, annotating, form filling, merge/split, and text search/copy.',
+      'Built as a fast client-side editor with React, TypeScript, and Vite for a responsive editing flow.',
+      'Uses pdf.js and Fabric.js overlays so files stay local in the browser for privacy-first document editing.',
+    ],
+    techStack: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'pdf.js', 'Fabric.js'],
+    githubUrl: 'https://github.com/7vignesh/folio',
+    featured: true,
+  },
+  {
+    id: '8',
+    title: 'gymApp (calorieX)',
+    description: [
+      'AI-powered calorie tracker for logging meals via free-text, image uploads, and structured nutrition entries.',
+      'Monorepo architecture with Next.js web app, Bun + Hono API, and Prisma/PostgreSQL data layer.',
+      'Includes auth, macro trends, and AI insights with graceful fallback behavior when AI services are unavailable.',
+    ],
+    techStack: ['Next.js 15', 'TypeScript', 'Bun', 'Hono', 'Prisma', 'PostgreSQL', 'Zod', 'OpenAI', 'Turborepo'],
+    githubUrl: 'https://github.com/7vignesh/gymApp',
+    featured: true,
+  },
+  {
     id: '6',
     title: 'StackForge',
     description: [
