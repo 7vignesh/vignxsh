@@ -55,6 +55,7 @@ export const projects: Project[] = [
     ],
     techStack: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'pdf.js', 'Fabric.js'],
     githubUrl: 'https://github.com/7vignesh/folio',
+    liveUrl: 'https://folio-delta-seven.vercel.app/',
     featured: true,
   },
   {
