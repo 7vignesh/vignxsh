@@ -46,6 +46,26 @@ export const skills: Skill[] = [
 
 export const projects: Project[] = [
   {
+    id: '9',
+    title: 'Fossel',
+    description: [
+      'Fossel is a local MCP (Model Context Protocol) memory server for open-source contributors.',
+      'It stores project-specific context such as reviewer preferences, bug fixes, conventions, decisions, and issue notes in a local SQLite database with FTS5 search.',
+    ],
+    techStack: [
+      'TypeScript',
+      'Node.js',
+      'SQLite (FTS5)',
+      'MCP Protocol',
+      'tsup',
+      'Vercel',
+      'GitHub Actions',
+    ],
+    githubUrl: 'https://github.com/7vignesh/fossel',
+    liveUrl: 'https://www.fossel.app/',
+    featured: true,
+  },
+  {
     id: '7',
     title: 'Folio',
     description: [
@@ -59,18 +79,6 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: '8',
-    title: 'gymApp (calorieX)',
-    description: [
-      'AI-powered calorie tracker for logging meals via free-text, image uploads, and structured nutrition entries.',
-      'Monorepo architecture with Next.js web app, Bun + Hono API, and Prisma/PostgreSQL data layer.',
-      'Includes auth, macro trends, and AI insights with graceful fallback behavior when AI services are unavailable.',
-    ],
-    techStack: ['Next.js 15', 'TypeScript', 'Bun', 'Hono', 'Prisma', 'PostgreSQL', 'Zod', 'OpenAI', 'Turborepo'],
-    githubUrl: 'https://github.com/7vignesh/gymApp',
-    featured: true,
-  },
-  {
     id: '6',
     title: 'StackForge',
     description: [
@@ -81,6 +89,18 @@ export const projects: Project[] = [
     techStack: ['TypeScript', 'Bun', 'Turborepo', 'Express', 'Zod', 'SSE', 'OpenRouter'],
     githubUrl: 'https://github.com/7vignesh/stackforge',
     liveUrl: 'https://stackforge-web.vercel.app/',
+    featured: true,
+  },
+  {
+    id: '8',
+    title: 'gymApp (calorieX)',
+    description: [
+      'AI-powered calorie tracker for logging meals via free-text, image uploads, and structured nutrition entries.',
+      'Monorepo architecture with Next.js web app, Bun + Hono API, and Prisma/PostgreSQL data layer.',
+      'Includes auth, macro trends, and AI insights with graceful fallback behavior when AI services are unavailable.',
+    ],
+    techStack: ['Next.js 15', 'TypeScript', 'Bun', 'Hono', 'Prisma', 'PostgreSQL', 'Zod', 'OpenAI', 'Turborepo'],
+    githubUrl: 'https://github.com/7vignesh/gymApp',
     featured: true,
   },
   {
@@ -146,26 +166,6 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/7vignesh/medxplain',
     featured: true,
   },
-    {
-      id: '9',
-      title: 'Fossel',
-      description: [
-        'Fossel is a local MCP (Model Context Protocol) memory server for open-source contributors.',
-        'It stores project-specific context such as reviewer preferences, bug fixes, conventions, decisions, and issue notes in a local SQLite database with FTS5 search.',
-      ],
-      techStack: [
-        'TypeScript',
-        'Node.js',
-        'SQLite (FTS5)',
-        'MCP Protocol',
-        'tsup',
-        'Vercel',
-        'GitHub Actions',
-      ],
-      githubUrl: 'https://github.com/7vignesh/fossel',
-      liveUrl: 'https://www.fossel.app/',
-      featured: true,
-    },
 ];
 
 export const experiences: Experience[] = [

@@ -80,24 +80,42 @@ const Projects: React.FC = () => {
 
           return (
             <article key={project.id} className="py-3">
-              <button
-                type="button"
-                onClick={() => setOpenProjectId(isOpen ? null : project.id)}
-                aria-expanded={isOpen}
-                className="flex w-full items-center justify-between gap-4 text-left group"
-              >
-                <div className="min-w-0">
-                  <div className="truncate text-sm font-medium text-white transition-colors duration-200 group-hover:text-zinc-200">
-                    {project.title}
+              <div className="flex items-center justify-between gap-4">
+                <button
+                  type="button"
+                  onClick={() => setOpenProjectId(isOpen ? null : project.id)}
+                  aria-expanded={isOpen}
+                  className="flex min-w-0 flex-1 items-center justify-between gap-4 text-left group"
+                >
+                  <div className="min-w-0">
+                    <div className="truncate text-sm font-medium text-white transition-colors duration-200 group-hover:text-zinc-200">
+                      {project.title}
+                    </div>
+                    <div className="mt-1 text-[11px] uppercase tracking-[0.2em] text-zinc-600">
+                      {category}
+                    </div>
                   </div>
-                  <div className="mt-1 text-[11px] uppercase tracking-[0.2em] text-zinc-600">
-                    {category}
+                  <div className="shrink-0 text-xs uppercase tracking-[0.2em] text-zinc-500 transition-colors duration-200 group-hover:text-zinc-300">
+                    {isOpen ? 'close' : 'open'}
                   </div>
-                </div>
-                <div className="shrink-0 text-xs uppercase tracking-[0.2em] text-zinc-500 transition-colors duration-200 group-hover:text-zinc-300">
-                  {isOpen ? 'close' : 'open'}
-                </div>
-              </button>
+                </button>
+
+                {project.liveUrl && (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`View live site for ${project.title}`}
+                    className="group inline-flex shrink-0 items-center gap-2 text-[10px] uppercase tracking-[0.22em] text-zinc-500 transition-colors duration-200 hover:text-zinc-200"
+                  >
+                    <span className="relative flex h-2.5 w-2.5 items-center justify-center">
+                      <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-400/25 animate-ping" />
+                      <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-400 shadow-[0_0_10px_rgba(74,222,128,0.55)]" />
+                    </span>
+                    <span className="transition-colors duration-200 group-hover:text-zinc-200">view site</span>
+                  </a>
+                )}
+              </div>
 
               <div
                 className={`grid overflow-hidden transition-all duration-200 ease-out ${
