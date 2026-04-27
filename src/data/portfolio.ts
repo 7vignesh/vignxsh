@@ -146,6 +146,26 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/7vignesh/medxplain',
     featured: true,
   },
+    {
+      id: '9',
+      title: 'Fossel',
+      description: [
+        'Fossel is a local MCP (Model Context Protocol) memory server for open-source contributors.',
+        'It stores project-specific context such as reviewer preferences, bug fixes, conventions, decisions, and issue notes in a local SQLite database with FTS5 search.',
+      ],
+      techStack: [
+        'TypeScript',
+        'Node.js',
+        'SQLite (FTS5)',
+        'MCP Protocol',
+        'tsup',
+        'Vercel',
+        'GitHub Actions',
+      ],
+      githubUrl: 'https://github.com/7vignesh/fossel',
+      liveUrl: 'https://www.fossel.app/',
+      featured: true,
+    },
 ];
 
 export const experiences: Experience[] = [
