@@ -166,6 +166,18 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/7vignesh/medxplain',
     featured: true,
   },
+  {
+    id: '10',
+    title: 'Skannr — Code Analyzer',
+    description: [
+      'Skannr (Code Analyzer) is a web app that analyzes codebases and surfaces metrics, insights, and quick actionable findings.',
+      'Includes an interactive UI for exploring analysis results and links back to the source repository for easy triage.',
+    ],
+    techStack: ['TypeScript', 'React', 'Node.js', 'Vite', 'Tailwind CSS'],
+    githubUrl: 'https://github.com/7vignesh/code-analyzer',
+    liveUrl: 'https://skannr-ten.vercel.app/',
+    featured: true,
+  },
 ];
 
 export const experiences: Experience[] = [
