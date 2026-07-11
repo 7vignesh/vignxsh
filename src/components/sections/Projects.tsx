@@ -15,6 +15,7 @@ const projectCategories: Record<string, Exclude<ProjectFilter, 'all'>> = {
   '3': 'tools',
   '5': 'ai',
   '9': 'tools',
+  '11': 'full-stack',
 };
 
 const filterLabels: { value: ProjectFilter; label: string }[] = [

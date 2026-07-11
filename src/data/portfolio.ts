@@ -167,6 +167,19 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    id: '11',
+    title: 'PgPulse',
+    description: [
+      'Production-grade, multi-tenant API analytics platform built on PostgreSQL 16 for tracking endpoint performance.',
+      'Ingests API request events per tenant and provides overview, endpoint, latency, error, and timeseries analytics — all isolated via Row-Level Security.',
+      'Scales with RANGE partitioning, a streaming read replica, PgBouncer connection pooling, and a materialized view refreshed by pg_cron.',
+      'Includes an in-database alert system that evaluates threshold rules every minute and delivers webhooks on breach.',
+    ],
+    techStack: ['Node.js', 'Fastify', 'TypeScript', 'PostgreSQL 16', 'PgBouncer', 'pg_cron', 'Docker', 'Vitest'],
+    githubUrl: 'https://github.com/7vignesh/pgpulse',
+    featured: true,
+  },
+  {
     id: '10',
     title: 'Skannr — Code Analyzer',
     description: [
