@@ -195,6 +195,22 @@ export const projects: Project[] = [
 
 export const experiences: Experience[] = [
   {
+    id: '2',
+    company: 'Open Source Contributor',
+    role: 'Independent Developer',
+    duration: 'Jan 2025 - Present',
+    startDate: '2025-01',
+    description: 'Building and maintaining open-source projects spanning API analytics, developer tools, AI-powered applications, and productivity utilities.',
+    highlights: [
+      'Built PgPulse — a multi-tenant API analytics platform on PostgreSQL 16 with RLS, partitioning, read replicas, and pg_cron-driven alerts',
+      'Created Fossel — a local MCP memory server for open-source contributors with SQLite FTS5 search',
+      'Developed StackForge — an AI agent orchestration platform that turns product ideas into full-stack blueprints',
+      'Shipped Folio — a privacy-first browser-based PDF workspace with annotations, merge/split, and text search',
+      'Published multiple packages and tools used by developers for code analysis, tracing, and project scaffolding',
+    ],
+    techStack: ['TypeScript', 'Node.js', 'PostgreSQL', 'React', 'Fastify', 'Docker', 'SQLite'],
+  },
+  {
     id: '1',
     company: 'Mantarlee Social Innovations Federation',
     role: 'Web Developer Intern',
