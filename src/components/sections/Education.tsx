@@ -20,15 +20,15 @@ const educationData = [
 const Education: React.FC = () => {
   return (
     <section id="education" className="space-y-6">
-      <h2 className="text-xs font-medium uppercase tracking-widest text-muted">education</h2>
+      <h2 className="text-sm font-medium uppercase tracking-widest text-muted">education</h2>
       <div className="space-y-4">
         {educationData.map((edu) => (
           <div key={edu.id} className="flex items-start justify-between gap-4">
             <div>
-              <p className="text-sm font-medium text-white">{edu.institution}</p>
-              <p className="text-xs text-zinc-500 mt-0.5">{edu.degree} &middot; {edu.grade}</p>
+              <p className="text-base font-medium text-white">{edu.institution}</p>
+              <p className="text-sm text-zinc-500 mt-0.5">{edu.degree} &middot; {edu.grade}</p>
             </div>
-            <span className="text-xs text-muted whitespace-nowrap shrink-0">{edu.duration}</span>
+            <span className="text-sm text-muted whitespace-nowrap shrink-0">{edu.duration}</span>
           </div>
         ))}
       </div>

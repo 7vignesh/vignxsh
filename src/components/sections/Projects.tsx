@@ -6,16 +6,17 @@ import { projects } from '@/data/portfolio';
 type ProjectFilter = 'all' | 'ai' | 'full-stack' | 'tools';
 
 const projectCategories: Record<string, Exclude<ProjectFilter, 'all'>> = {
+  '6': 'ai',
+  '9': 'ai',
   '7': 'tools',
   '8': 'ai',
-  '6': 'ai',
+  '11': 'full-stack',
+  '10': 'ai',
   '4': 'ai',
   '1': 'full-stack',
   '2': 'full-stack',
   '3': 'tools',
   '5': 'ai',
-  '9': 'tools',
-  '11': 'full-stack',
 };
 
 const filterLabels: { value: ProjectFilter; label: string }[] = [
@@ -54,8 +55,8 @@ const Projects: React.FC = () => {
 
   return (
     <section id="projects" className="space-y-5">
-      <h2 className="text-xs font-medium uppercase tracking-widest text-muted">projects</h2>
-      <div className="flex flex-wrap items-center gap-2 text-[11px] uppercase tracking-[0.24em] text-zinc-600">
+      <h2 className="text-sm font-medium uppercase tracking-widest text-muted">projects</h2>
+      <div className="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.24em] text-zinc-600">
         {filterLabels.map((filter) => {
           const isActive = activeFilter === filter.value;
 
@@ -80,7 +81,7 @@ const Projects: React.FC = () => {
           const category = projectCategories[project.id];
 
           return (
-            <article key={project.id} className="py-3">
+            <article key={project.id} className="py-4">
               <div className="flex items-center justify-between gap-4">
                 <button
                   type="button"
@@ -89,14 +90,14 @@ const Projects: React.FC = () => {
                   className="flex min-w-0 flex-1 items-center justify-between gap-4 text-left group"
                 >
                   <div className="min-w-0">
-                    <div className="truncate text-sm font-medium text-white transition-colors duration-200 group-hover:text-zinc-200">
+                    <div className="truncate text-base font-medium text-white transition-colors duration-200 group-hover:text-zinc-200">
                       {project.title}
                     </div>
-                    <div className="mt-1 text-[11px] uppercase tracking-[0.2em] text-zinc-600">
+                    <div className="mt-1 text-xs uppercase tracking-[0.2em] text-zinc-600">
                       {category}
                     </div>
                   </div>
-                  <div className="shrink-0 text-xs uppercase tracking-[0.2em] text-zinc-500 transition-colors duration-200 group-hover:text-zinc-300">
+                  <div className="shrink-0 text-sm uppercase tracking-[0.2em] text-zinc-500 transition-colors duration-200 group-hover:text-zinc-300">
                     {isOpen ? 'close' : 'open'}
                   </div>
                 </button>
@@ -107,7 +108,7 @@ const Projects: React.FC = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`View live site for ${project.title}`}
-                    className="group inline-flex shrink-0 items-center gap-2 text-[10px] uppercase tracking-[0.22em] text-zinc-500 transition-colors duration-200 hover:text-zinc-200"
+                    className="group inline-flex shrink-0 items-center gap-2 text-xs uppercase tracking-[0.22em] text-zinc-500 transition-colors duration-200 hover:text-zinc-200"
                   >
                     <span className="relative flex h-2.5 w-2.5 items-center justify-center">
                       <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-400/25 animate-ping" />
@@ -124,15 +125,15 @@ const Projects: React.FC = () => {
                 }`}
               >
                 <div className="min-h-0 space-y-3">
-                  <ul className="list-disc space-y-1 pl-5 text-sm leading-relaxed text-zinc-400 marker:text-zinc-500">
+                  <ul className="list-disc space-y-1 pl-5 text-base leading-relaxed text-zinc-400 marker:text-zinc-500">
                     {project.description.map((point, index) => (
                       <li key={`${project.id}-${index}`}>{point}</li>
                     ))}
                   </ul>
-                  <p className="text-xs leading-relaxed text-zinc-600">
+                  <p className="text-sm leading-relaxed text-zinc-600">
                     {project.techStack.join(' · ')}
                   </p>
-                  <div className="flex flex-wrap items-center gap-4 text-xs uppercase tracking-[0.2em] text-zinc-500">
+                  <div className="flex flex-wrap items-center gap-4 text-sm uppercase tracking-[0.2em] text-zinc-500">
                     {project.githubUrl && (
                       <a
                         href={project.githubUrl}

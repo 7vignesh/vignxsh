@@ -6,7 +6,7 @@ import { socialLinks, personalInfo } from '@/data/portfolio';
 const Footer: React.FC = () => {
   return (
     <footer className="pt-8 border-t border-zinc-900">
-      <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted">
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-base text-muted">
         <span>say hello on</span>
         {socialLinks.map((link) => (
           <a
@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
             {link.name}
           </a>
         ))}
-        <span className="ml-auto text-xs text-zinc-700">
+        <span className="ml-auto text-sm text-zinc-700">
           {personalInfo.name.toLowerCase()}. {new Date().getFullYear()}
         </span>
       </div>
