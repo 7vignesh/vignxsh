@@ -1,4 +1,4 @@
-import { Hero, About, Projects, Experience, Education, Skills } from '@/components/sections';
+import { Hero, About, OpenSource, Projects, Experience, Education, Skills } from '@/components/sections';
 import { Footer } from '@/components/layout';
 
 export default function Home() {
@@ -7,6 +7,7 @@ export default function Home() {
       <Hero />
       <About />
       <Experience />
+      <OpenSource />
       <Projects />
       <Education />
       <Skills />

@@ -14,6 +14,7 @@ export const personalInfo: PersonalInfo = {
 export const navItems: NavItem[] = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
+  { label: 'Open Source', href: '#open-source' },
   { label: 'Projects', href: '#projects' },
   { label: 'Experience', href: '#experience' },
   { label: 'Education', href: '#education' },
