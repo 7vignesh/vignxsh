@@ -7,7 +7,16 @@ export interface MergedPullRequest {
 }
 
 export const mergedPullRequests: MergedPullRequest[] = [
+  { repository: 'Agent-Field/agentfield', number: 945, title: 'fix(execute): propagate agent 4xx in async lane instead of blanket 502', url: 'https://github.com/Agent-Field/agentfield/pull/945', mergedAt: '2026-08-23' },
+  { repository: 'Agent-Field/agentfield', number: 943, title: 'fix(execute): resolve webhook not triggering on async status callback (#936)', url: 'https://github.com/Agent-Field/agentfield/pull/943', mergedAt: '2026-08-22' },
+  { repository: 'Agent-Field/agentfield', number: 917, title: 'feat(examples): triggers-demo-go end-to-end demo + Go skill docs (#516)', url: 'https://github.com/Agent-Field/agentfield/pull/917', mergedAt: '2026-08-15' },
+  { repository: 'Agent-Field/agentfield', number: 915, title: 'feat(sdk/go): trigger test helpers + fixture library (#515)', url: 'https://github.com/Agent-Field/agentfield/pull/915', mergedAt: '2026-08-13' },
+  { repository: 'Agent-Field/agentfield', number: 914, title: 'feat(sdk/go): dispatch envelope unwrap + Context injection (#514)', url: 'https://github.com/Agent-Field/agentfield/pull/914', mergedAt: '2026-08-13' },
+  { repository: 'Agent-Field/agentfield', number: 906, title: 'feat(sdk/go): triggers package + OnEvent/OnSchedule sugar (#513)', url: 'https://github.com/Agent-Field/agentfield/pull/906', mergedAt: '2026-08-12' },
+  { repository: 'Agent-Field/agentfield', number: 904, title: 'fix(sdk/python): add lock timeouts + offload blocking requests fallback (#620)', url: 'https://github.com/Agent-Field/agentfield/pull/904', mergedAt: '2026-08-12' },
+  { repository: 'Agent-Field/agentfield', number: 899, title: 'fix(sdk/python): replace bare asyncio.run() with loop-aware helpers (#620)', url: 'https://github.com/Agent-Field/agentfield/pull/899', mergedAt: '2026-08-10' },
   { repository: 'Agent-Field/agentfield', number: 812, title: 'chore(sdk/python): enable ruff ASYNC lint rules to gate async/blocking hazards (#620)', url: 'https://github.com/Agent-Field/agentfield/pull/812', mergedAt: '2026-08-05' },
+  { repository: 'Agent-Field/agentfield', number: 799, title: 'fix(sdk/python): resolve ResultCache cross-loop deadlock (#623)', url: 'https://github.com/Agent-Field/agentfield/pull/799', mergedAt: '2026-08-10' },
   { repository: 'Agent-Field/agentfield', number: 796, title: 'feat(sdk/typescript): trigger system parity — dispatch, sugar, testing, demo', url: 'https://github.com/Agent-Field/agentfield/pull/796', mergedAt: '2026-07-19' },
   { repository: 'Agent-Field/agentfield', number: 794, title: 'test(sdk/python): expand verification.py coverage to 100% (#398)', url: 'https://github.com/Agent-Field/agentfield/pull/794', mergedAt: '2026-07-18' },
   { repository: 'Agent-Field/agentfield', number: 790, title: 'fix(security): SSRF protection for approval callback_url (#435)', url: 'https://github.com/Agent-Field/agentfield/pull/790', mergedAt: '2026-07-19' },
