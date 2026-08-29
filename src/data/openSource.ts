@@ -7,6 +7,11 @@ export interface MergedPullRequest {
 }
 
 export const mergedPullRequests: MergedPullRequest[] = [
+  { repository: 'Agent-Field/agentfield', number: 996, title: 'fix(control-plane): skip disk payload writes in postgres storage mode', url: 'https://github.com/Agent-Field/agentfield/pull/996', mergedAt: '2026-08-28' },
+  { repository: 'Agent-Field/agentfield', number: 975, title: 'refactor(handlers): split execute.go into focused files (3048 -> 807 LOC)', url: 'https://github.com/Agent-Field/agentfield/pull/975', mergedAt: '2026-08-27' },
+  { repository: 'Agent-Field/agentfield', number: 959, title: 'refactor(storage): split local.go into focused files (9009 -> 5917 LOC)', url: 'https://github.com/Agent-Field/agentfield/pull/959', mergedAt: '2026-08-26' },
+  { repository: 'Agent-Field/agentfield', number: 958, title: 'fix(sdk/go): propagate caller context through MemoryBackend interface', url: 'https://github.com/Agent-Field/agentfield/pull/958', mergedAt: '2026-08-25' },
+  { repository: 'Agent-Field/agentfield', number: 952, title: 'feat(control-plane): add per-key rate limiting on hot endpoints', url: 'https://github.com/Agent-Field/agentfield/pull/952', mergedAt: '2026-08-24' },
   { repository: 'Agent-Field/agentfield', number: 945, title: 'fix(execute): propagate agent 4xx in async lane instead of blanket 502', url: 'https://github.com/Agent-Field/agentfield/pull/945', mergedAt: '2026-08-23' },
   { repository: 'Agent-Field/agentfield', number: 943, title: 'fix(execute): resolve webhook not triggering on async status callback (#936)', url: 'https://github.com/Agent-Field/agentfield/pull/943', mergedAt: '2026-08-22' },
   { repository: 'Agent-Field/agentfield', number: 917, title: 'feat(examples): triggers-demo-go end-to-end demo + Go skill docs (#516)', url: 'https://github.com/Agent-Field/agentfield/pull/917', mergedAt: '2026-08-15' },
